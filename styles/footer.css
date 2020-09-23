@@ -1,0 +1,44 @@
+footer {
+  padding: 5%;
+  background: #f5ecdc;
+  text-align: center;
+  font-family: garamond, georgia;
+}
+
+/* style social media icons */
+.fa {
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.fa:hover {
+  opacity: 0.5;
+}
+
+/* instagram */
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* github */
+.fa-github {
+  background: #4078c0;
+  color: white;
+}
+
+/* linkedin */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+/* flickr */
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}

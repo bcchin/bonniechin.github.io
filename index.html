@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head>
+    <title>My Webpage</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+    <!-- Linked Stylesheets -->
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <header>
+      <div class="logo">
+        <h2 id="logo"><a href="index.html">BONNIE CHIN</a></h2>
+      </div>
+      <div class="navbar" id="navbar">
+        <a href="index.html">home</a>
+        <a href="about.html" class"active">about</a>
+        <a href="contact.html">contact</a>
+        <div class="dropdown"><a href="#">portfolio<i class="fa fa-caret-down"></i></a>
+          <div class="dropdown-content">
+            <a href="artwork.html">artwork</a>
+            <a href="photography.html">photography</a>
+            <a href="coding.html">coding</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Header Image -->
+    <div id="header-image-menu">
+      <img src="images/munich.JPG" alt="photo of a pond surrounded by willow trees, taken in munich in 2019"/>
+      <h1 id="header-text" style="margin-top: 50px; font-size:8vw;"> hello, world! </h1>
+        <h5 id="header-subtext" style="margin-bottom: 50px; font-size:2vw;">
+          welcome to my corner of the internet.
+        </h5>
+    </div>
+  <main>
+
+    <!-- About Me Blurb -->
+    <div class="about-row">
+      <div class="about-side">
+        <img src="images/headshot2.jpeg" alt="a photo of me in munich"/>
+      </div>
+      <div class="main-section">
+        <p><em><strong>A LITTLE ABOUT ME...</strong></em><br><br><br><br>
+          <strong>Hey there!</strong> My name is Bonnie Chin. I'm currently a
+          junior at Colgate University majoring in Economics and Computer Science.
+          I'm a passionate artist, photographer, music listener, and a
+          self-proclaimed bubble tea connoisseur. My most recent interest is
+          web development, and this website is a product of that endeavor! You can
+          explore my site to learn more about me, or get straight to the point
+          by checking out my resume. Thanks for stopping by!</p>
+        <div class="button-group">
+          <button type="button">resume</button>
+          <a href="about.html"><button type="button">read more</button></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slideshow of my Photographs -->
+    <div class="slideshow-container">
+
+      <div class="slideshow-title">
+        <h4><em><a href="photography.html">~~~ VIEW MY PHOTOGRAPHS ~~~</a><em></h4>
+      </div>
+
+      <div class=slideshow-image>
+        <div class="image-number"> 1 / 4</div>
+        <img src="images/021520_SeniorBall_BC-1516.jpg" alt="Two Students at Colgate University's 2020 Senior Ball"/>
+      </div>
+
+      <div class="slideshow-image">
+        <div class="image-number"> 2 / 4</div>
+        <img src="images/092019_AndySuzuki_BC_4133.jpg" alt="Colgate University student singing"/>
+      </div>
+
+      <div class="slideshow-image">
+        <div class="image-number"> 3 / 4</div>
+        <img src="images/050519_holi_BC_2787.jpg" alt="Colgate University Students Celebrating Holi"/>
+      </div>
+
+      <div class="slideshow-image">
+        <div class="image-number"> 4 / 4</div>
+        <img src="images/091919_ClimateStrike_BC_3850.jpg" alt="Colgate University Students on a Climate Strike"/>
+      </div>
+
+      <!-- Next and Previous Buttons -->
+      <div class="slideshow-buttons">
+        <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlides(1)">&#10095;</a>
+      </div>
+    </div>
+
+    <!-- Instagram Grid of my Artwork? -->
+    <div class="artwork-grid">
+      <div class="artwork-section-title">
+        <h4><em><a href="artwork.html">~~~ VIEW MY ARTWORK ~~~</a><em></h4>
+      </div>
+      <div class="art-row">
+        <div class="art-column">
+          <a href="https://www.instagram.com/p/CC_xWB-h10Y/" target="_blank"><img src="images/portrait_58.jpg" alt="portrait of an asian male model, colored pencil"/></a>
+          <a href="https://www.instagram.com/p/CCtaShkhSyX/" target="_blank"><img src="images/portrait_57.jpg" alt="portrait of a female model, gouache"/></a>
+        </div>
+
+        <div class="art-column">
+          <a href="https://www.instagram.com/p/CCWlc42BOBQ/" target="_blank"><img src="images/portrait_55.jpg" alt="portrait of a young woman, pen"/></a>
+          <a href="https://www.instagram.com/p/B0yffimB6KF/" target="_blank"><img src="images/portrait_33.jpg" alt="portrait of a young woman applying mascara, digital"/></a>
+        </div>
+
+        <div class="art-column">
+          <a href="https://www.instagram.com/p/B1olDsqBTBF/" target="_blank"><img src="images/portrait_38.jpg" alt="portrait of yara shahidi, gouache"/></a>
+          <a href="https://www.instagram.com/p/B-kaUy2BNWe/" target="_blank"><img src="images/portrait_52.jpg" alt="portait of a bearded guy, pen"/></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <a href="http://linkedin.com/in/bonniechin" class="fa fa-linkedin" target="_blank"></a>
+    <a href="https://github.com/bcchin" class="fa fa-github" target="_blank"></a>
+    <a href="http://instagram.com/bonnie.chin" class="fa fa-instagram" target="_blank"></a>
+    <a href="https://www.flickr.com/photos/148300792@N03/" class="fa fa-flickr" target="_blank"></a>
+  </footer>
+  <!-- Linked Scripts -->
+  <script src="scripts/home.js"></script>
+  </body>
+</html>
