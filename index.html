@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   </head>
   <body>
     <!-- Navigation Menu -->
@@ -23,31 +24,21 @@
         <h2 id="logo"><a href="index.html">BONNIE CHIN</a></h2>
       </div>
       <div class="navbar" id="navbar">
-        <a href="index.html">home</a>
-        <a href="about.html" class"active">about</a>
-        <a href="contact.html">contact</a>
-        <div class="dropdown"><a href="#">portfolio<i class="fa fa-caret-down"></i></a>
-          <div class="dropdown-content">
-            <a href="artwork.html">artwork</a>
-            <a href="photography.html">photography</a>
-            <a href="coding.html">coding</a>
-          </div>
-        </div>
+        <a href="#about">about</a>
+        <a href="#coding-section">coding</a>
+        <a href="#photography-section">photography</a>
+        <a href="#artwork-section">artwork</a>
       </div>
     </header>
 
     <!-- Header Image -->
     <div id="header-image-menu">
-      <img src="images/munich.JPG" alt="photo of a pond surrounded by willow trees, taken in munich in 2019"/>
-      <h1 id="header-text" style="margin-top: 50px; font-size:8vw;"> hello, world! </h1>
-        <h5 id="header-subtext" style="margin-bottom: 50px; font-size:2vw;">
-          welcome to my corner of the internet.
-        </h5>
+      <img src="images/munich.JPG" class="img-fluid" alt="photo of a pond surrounded by willow trees, taken in munich in 2019"/>
     </div>
   <main>
 
     <!-- About Me Blurb -->
-    <div class="about-row">
+    <div class="about-row" id="about">
       <div class="about-side">
         <img src="images/headshot2.jpeg" alt="a photo of me in munich"/>
       </div>
@@ -58,23 +49,37 @@
           I'm a passionate artist, photographer, music listener, and a
           self-proclaimed bubble tea connoisseur. My most recent interest is
           web development, and this website is a product of that endeavor! You can
-          explore my site to learn more about me, or get straight to the point
+          scroll to learn more about me, or get straight to the point
           by checking out my resume. Thanks for stopping by!</p>
         <div class="button-group">
-          <button type="button">resume</button>
-          <a href="about.html"><button type="button">read more</button></a>
+          <a href="Bonnie_Chin_Resume.pdf" target="_blank"><button type="button">resume</button></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Computing Projects -->
+    <div class="projects-grid" id="coding-section">
+      <div class="projects-title">
+        <h4><em>~~CURRENT PROJECTS~~~</h4>
+      </div>
+      <div class="project-row">
+        <!-- imaginaire Media -->
+        <div class="project-column">
+        </div>
+        <!-- My Sport is Art -->
+        <div class="project-column">
         </div>
       </div>
     </div>
 
     <!-- Slideshow of my Photographs -->
-    <div class="slideshow-container">
+    <div class="slideshow-container" id="photography-section">
 
       <div class="slideshow-title">
-        <h4><em><a href="photography.html">~~~ VIEW MY PHOTOGRAPHS ~~~</a><em></h4>
+        <h4><em>~~~ SOME OF MY PHOTOGRAPHS ~~~<em></h4>
       </div>
 
-      <div class=slideshow-image>
+      <div class="slideshow-image">
         <div class="image-number"> 1 / 4</div>
         <img src="images/021520_SeniorBall_BC-1516.jpg" alt="Two Students at Colgate University's 2020 Senior Ball"/>
       </div>
@@ -101,10 +106,11 @@
       </div>
     </div>
 
+
     <!-- Instagram Grid of my Artwork? -->
-    <div class="artwork-grid">
+    <div class="artwork-grid" id="artwork-section">
       <div class="artwork-section-title">
-        <h4><em><a href="artwork.html">~~~ VIEW MY ARTWORK ~~~</a><em></h4>
+        <h4><em>~~~ SOME OF MY ARTWORK ~~~<em></h4>
       </div>
       <div class="art-row">
         <div class="art-column">
@@ -132,5 +138,7 @@
   </footer>
   <!-- Linked Scripts -->
   <script src="scripts/home.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </body>
 </html>

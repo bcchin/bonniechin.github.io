@@ -10,34 +10,18 @@ body {
   background-color: #f5ecdc;
 }
 
-/* || Header Image with Text Overlay*/
-#header-image-menu {
+/* || Header Image*/
+/*#header-image-menu {
   margin: 0;
   padding: 0;
   position: relative;
   width: 100%;
-}
+}*/
 
 #header-image-menu img {
   width: 100%;
   height: auto;
   padding: none;
-} 
-
-#header-text {
-  display: inline-flex;
-  position: absolute;
-  padding: 20px;
-  top: 20%;
-  right: 22%;
-  color: white;
-}
-
-#header-subtext {
-  position: absolute;
-  top: 40%;
-  right: 30%;
-  color: white;
 }
 
 /* || About Me Blurb */
@@ -94,6 +78,7 @@ button {
 
 button a {
   text-decoration: none;
+  color: white;
 }
 
 button:hover {
@@ -107,7 +92,7 @@ button:hover {
   margin: auto;
 }
 
-.slideshow-title, .artwork-section-title {
+.slideshow-title, .artwork-section-title, .projects-title{
   text-align: center;
   letter-spacing: 3px;
   padding-top: 50px;
@@ -160,6 +145,9 @@ button:hover {
 }
 
 /* || Artwork Grid */
+.artwork-section {
+  padding-bottom: 50px;
+}
  .art-row {
    display: flex;
    flex-wrap: wrap;
