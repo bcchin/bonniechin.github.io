@@ -1,21 +1,9 @@
+/* Set Background Color */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: garamond, georgia;
-  background-color: #f5ecdc
+  background: #3a5285 !important;
 }
 
-main {
-  background-color: #FFFAF0;
-}
-
-.page-title {
-  margin-bottom: 20px;
-  padding: 0px 100px 20px 100px;
-  text-align: center;
-  font-size: 50px;
-  font-weight: bold;
-  font-style: oblique;
-  text-shadow: 18px 18px 0 #b2bfb5;
-  letter-spacing: 3px;
+.img-art {
+  max-width: 25%%;
+  height: 25%;
 }
