@@ -1,109 +1,171 @@
 <!DOCTYPE html>
 
 <html lang="en-US">
-  <head>
-    <title>My Webpage</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Bonnie Chin</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/navbar.css">
+        <link rel="stylesheet" href="styles/about.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/about.css">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <!-- Bootstrap Links -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!-- Navigation Menu -->
-    <h1 class="logo"><a href="#">Bonnie Chin</a></h1>
-    <nav class="navbar navbar-expand-md navbar-toggler justify-content-center bg-color">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-item" href="#work">Work</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-item" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-item" href="Bonnie_Chin_Resume.pdf" target="_blank">Resume</a>
-        </li>
-      </ul>
-    </nav>
-    <br>
+        <script src="scripts/navbar.js"></script>
 
-    <div class="container bg-color">
-      <div class="row">
-        <div class="col-sm-5">
-            <h1 class="hello">HELLO, WORLD!</h1>
-            <p class="lead text-justify about">I'm Bonnie, a junior at Colgate University studying Computer Science and
-              Economics. I'm a passionate artist and photographer, avid music listener, and the
-               Co-Founder of <strong>Bee Tea Boba LLC</strong>.
-              Listen to my currently most played songs below while scrolling to
-              learn more about me. <strong>Thanks for stopping by!</strong></p>
-            <div class="socials">
-              <a href="http://linkedin.com/in/bonniechin" class="fa fa-linkedin" target="_blank"></a>
-              <a href="https://github.com/bcchin" class="fa fa-github" target="_blank"></a>
-              <a href="http://instagram.com/bonnie.chin" class="fa fa-instagram" target="_blank"></a>
-              <a href="https://www.flickr.com/photos/148300792@N03/" class="fa fa-flickr" target="_blank"></a>
-            </div>
-            <div class="spotify-playlist">
-              <iframe src="https://open.spotify.com/embed/playlist/486CsPlCFSyMKinmeulv3o" width="400" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-        </div>
-        <div class="col-sm-2">
-        </div>
-        <div class="col-sm-5">
-          <img class="img-fluid rounded-circle headshot" src="images/headshot2.jpeg" alt="a photo of me in munich"/>
-        </div>
-      </div>
-      <!-- java scrolling game here -->
-      <div class="row" id="work">
-        <div class="col-sm-5">
-        </div>
-        <div class="col-sm-2"></div>
-        <div class="col-sm-5">
-          <!--<h1 class="section-title">java scrolling game</h1>-->
-          <p class="lead text-justify section-description"></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-5">
-          <h1 class="section-title">website design & development</h1>
-          <p class="lead text-justify section-description"><strong>My Sport Is Art</strong> is a creative initiatve I spearheaded in collaboration
-            with a few friends to showcase talented artists from all backgrounds. <br><em>Currently a work in progress</em></p>
-          <h5><a class="project-link" href="https://github.com/bcchin/my-sport-is-art" target="_blank">Go to Project</a></h5>
-        </div>
-        <div class="col-sm-2"></div>
-        <div class="col-sm-5">
-          <img class="img-fluid msia_page" src="images/msia_landing_page.jpg" alt="landing page for 'My Sport is Art"/>
-        </div>
-      </div>
-      <!-- Imaginaire Media Webpage Redesign -->
-      <div class="row">
+        <!-- Box Icons -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
 
-      </div>
-      <!-- bee tea boba llc -->
-      <div class="row">
 
-      </div>
-      <div class="row">
-        <div class="col-sm-5">
-          <img class="img-fluid rounded art-section-img" src="images/Untitled_Artwork.png" alt="digital illustration of a girl putting on mascara"/>
-          <h1 class="section-title">art</h1>
-          <p class="lead text-justify section-description">Selected artworks, both <strong>digital</strong> and <strong>traditional</strong>.</p>
-          <h5><a class="project-link" href="artwork.html">Go to Project</a></h5>
-        </div>
-        <div class="col-sm-2"></div>
-        <div class="col-sm-5">
-          <img class="img-fluid rounded photo-section-img" src="images/Isabelle1.JPG" alt="Overlay of a girl and a room"/>
-          <h1 class="section-title">photography</h1>
-          <p class="lead text-justify section-description">Selected photographs taken with a DLSR camera and edited in post-production with <strong>Adobe Lightroom</strong>.</p>
-          <h5><a class="project-link" href="photography.html">Go to Project</a></h5>
-        </div>
-      </div>
-    </div>
-  </body>
+        <!-- Bootstrap Links -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Navigation Menu -->
+        <nav class="navbar navbar-expand-md navbar-toggler justify-content-center bg-color sticky-top" id="navbar">
+                <a class="navbar-brand logo" href="#">Bonnie Chin</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-item" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-item" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-item" href="#work">Work</a></li>
+                    <li class="nav-item"><a class="nav-item" href="#contact">Contact</a></li>
+                </ul>
+        </nav>
+
+        <main>
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div><h1 class="home-title">Hello, World!<br>I'm <span>Bonnie</span></h1></h1></div><br>
+                            <div class="home-socials">
+                                <a href="https://www.linkedin.com/in/bonniechin" class="home-social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                                <a href="https://www.instagram.com/bonnie.chin/" class="home-social-icon" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                                <a href="https://github.com/bcchin" class="home-social-icon" target="_blank"><i class='bx bxl-github' ></i></a>
+                                <a href="https://www.flickr.com/photos/148300792@N03/" class="home-social-icon" target="_blank"><i class='bx bxl-flickr-square' ></i></a>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <img class="img-fluid rounded-circle headshot" src="images/headshot2.jpeg" alt="a photo of me in munich"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about" id="about">
+                <div class="container">
+                    <h2 class="section-title">ABOUT</h2>
+                    <div class="row">
+                        <div class="col-sm">
+                            <img class="img-fluid rounded-thumbnail headshot" src="images/me-fullbody2.jpeg" alt="a photo of me in prague"/>
+                        </div>
+                        <div class="col-sm">
+                            <h2 class="about-subtitle">I'm Bonnie,</h2><br>
+                            <h3 class="about-text">currently a junior @ Colgate University studying Computer Science + Economics
+                                <br> I'm an<br>artist,<br>music lover,<br>programmer,<br>and entreprenuer. 
+                                <br><br>Learn about my bubble tea company <i><a href="http://beeteaboba.com/" target="_blank" class="bee-tea-link">here</a></i>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills" id="skills">
+                <div class="container">
+                    <h2 class="section-title">SKILLS</h2>
+                    <div class="row">
+                        <div class="col-sm">
+                            <h2 class="section-subtitle">Technical Skills</h2>
+                            <ul>
+                                <li>Java</li>
+                                <li>Python <i class='bx bxl-python' ></i></li>
+                                <li>HTML5 <i class='bx bxl-html5'></i></li>
+                                <li>CSS3 <i class='bx bxl-css3' ></i></li>
+                                <li>JavaScript <i class='bx bxl-javascript' ></i></li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm">
+                            <h2 class="section-subtitle">Relevant Coursework</h2>
+                            <ul>
+                                <li>Data Structures & Algorithms</li>
+                                <li>Discrete Structures</li>
+                                <li>Computer Organization & Design</li>
+                                <li>Linear Algebra</li>
+                                <li>Introduction to Computer Systems <br><b><i>(in progress)</i></b></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm">
+                            <h2 class="section-subtitle">Experiences</h2>
+                            <ul>
+                                <li>CS Teaching Assistant @ <b>Colgate University</b></li>
+                                <li>Co-Founder @ <b>Bee Tea Boba LLC.</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" id="resume">
+                        <h5><a href="Bonnie_Chin_Resume.pdf" class="resume-link" target="_blank"> VIEW MY RESUME HERE >>> </a></h5>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work" id="work">
+                <div class="container">
+                    <h2 class="section-title">WORK</h2>
+                    <div class="row">
+                        <div class="col-sm work-subsection">
+                            <h2 class="section-subtitle">Coding</h2>
+                            <img class="img-fluid rounded-circle work-thumbnail" src="images/interstellar.png" alt="an illustration of a rocket in space">
+                            <h4 class="work-caption"><a href="https://github.com/bcchin/interstellar" class="project-link" target="_blank">go to project</a></h4>
+                        </div>
+                        <div class="col-sm work-subsection">
+                            <h2 class="section-subtitle">Art</h2>
+                            <img class="img-fluid rounded-circle work-thumbnail" src="images/portrait_33.jpg" alt="digital illustration of a girl applying mascara">
+                            <h4 class="work-caption"><a href="https://instagram.com/bonnie.chin" class="project-link" target="_blank"> go to project</a></h4>
+                        </div>
+                        <div class="col-sm work-subsection">
+                            <h2 class="section-subtitle">Photography</h2>
+                            <img class="img-fluid rounded-circle work-thumbnail" src="images/photography-thumbnail.jpg" alt="a girl singing">
+                            <h4 class="work-caption"><a href="https://www.flickr.com/photos/148300792@N03/" class="project-link" target="_blank">go to project</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact" id="contact">
+                <div class="container">
+                    <h2 class="section-title contact-titleabout">LET'S CONNECT!</h2><br><br>
+                    <div class="row">
+                        <div class="col-sm">
+                            <h3>Thanks for stopping by!<br>Feel free to shoot me an email at:
+                                <a href="mailto:bcchin@colgate.edu" class="email-address">bcchin@colgate.edu</a>
+                            </h3>
+                        </div>
+                        <div class="col-sm contact-right-col">
+                            <h3><i>Or find me on:</i></h3>
+                            <a href="https://www.linkedin.com/in/bonniechin" class="contact-social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://www.instagram.com/bonnie.chin/" class="contact-social-icon" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                            <a href="https://github.com/bcchin" class="contact-social-icon" target="_blank"><i class='bx bxl-github' ></i></a>
+                            <a href="https://www.flickr.com/photos/148300792@N03/" class="contact-social-icon" target="_blank"><i class='bx bxl-flickr-square' ></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer-message">coded & designed with love <i class='bx bxs-heart' ></i> 2021</p>
+        </footer>
+    </body>
+
 </html>

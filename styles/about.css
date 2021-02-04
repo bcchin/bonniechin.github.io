@@ -1,68 +1,105 @@
-/* Set Background Color */
-body {
-  background: #3a5285 !important;
-}
-
-/* Stylize About Text*/
-.hello {
-  font-weight: bolder;
-}
-
-.about, .section-description, .hello {
-  color: white;
-}
-
-/* Social Media Links */
-.socials {
-  text-align: center;
-  font-size: 225%;
-}
-
-.fa {
-  color: pink;
-  margin: 12px;
-}
-
-.fa:hover {
-  color: white;
-  text-decoration: none;
-}
-
-/* Spotify Playlist */
-.spotify-playlist {
-  margin: 20px;
-  text-align: center;
-}
-
-/* Stylize Section Texts */
-.section-title {
-  font-weight: bold;
-  color: pink;
-  margin-top: 10px;
-}
-
-.project-link {
-  color: white;
-  text-decoration: underline;
-}
-
-.project-link {
-  color: white;
-  text-decoration: underline;
-}
-
-.project-link:hover {
-  color: white;
-}
-
 .row {
-  margin: 50px;
+    margin: 50px;
+  }
+
+/*********** Set Background Color ***********/
+body {
+    background: #3a5285 !important;
+  }
+
+/*********** Stylize Section Texts ***********/
+.section-title {
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-/* Border Around Items */
-.msia_page, .photo-section-img, .headshot, .spotify-playlist iframe {
+.section-title, .section-subtitle{
+    text-align: center;
+    color: pink;
+}
+
+li,.about-text, .about-subtitle {
+    color: beige;
+}
+
+/*********** Stylize Social Icons ***********/
+.home-social-icon, .contact-social-icon {
+    color: pink;
+    font-size: xx-large;
+}
+
+/*********** Stylize Links ***********/
+.contact-social-icon:hover, .home-social-icon:hover, .bee-tea-link:hover,
+.email-address:hover, .resume-link:hover {
+    color: white;
+    font-style: none;
+    text-decoration: none;
+}
+
+.bee-tea-link, .email-address, .resume-link {
+    color:pink;
+}
+
+
+/*********** Border Around Images ***********/
+.headshot, .work-thumbnail {
   border-style:outset;
   border-width: 10px;;
   border-color: pink;
   border-radius: 10px;
+}
+
+/*********** Home Section ***********/
+.home-title {
+   font-size: 5rem;
+   color: beige;
+}
+
+
+/*********** About Section ***********/
+.container {
+    padding: 5rem;
+}
+
+/*********** Skills Section ***********/
+#resume {
+  padding: 5%;
+}
+
+/*********** Work Section ***********/
+.work-subsection {
+    margin: 1rem;
+}
+
+.work-thumbnail {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.work-caption {
+    text-align: center;
+}
+
+.project-link {
+    color:beige;
+}
+.project-link:hover {
+    opacity: 75%;
+    color:beige;
+    text-decoration: none;
+}
+
+/*********** Contact Section ***********/
+.contact {
+    color: beige;
+}
+
+.contact-right-col{
+    text-align: center;
+}
+
+/*********** Footer ***********/
+.footer-message {
+    text-align: center;
+    color: beige;
 }
